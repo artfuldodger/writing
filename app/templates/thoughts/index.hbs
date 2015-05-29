@@ -1,0 +1,15 @@
+<section class="thoughts">
+  <div class="wrapper">
+    <h1>
+      Thoughts
+    </h1>
+
+    {{#each thought in controller}}
+      <div class="thought">
+        {{thought.body}}
+      </div>
+    {{/each}}
+  </div>
+</section>
+
+{{outlet}}
