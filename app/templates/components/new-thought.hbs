@@ -1,0 +1,11 @@
+{{yield}}
+
+<div class="wrapper">
+  <form {{action 'finish' on='submit'}}>
+    <div class="actions">
+      <a href="#" {{action 'finish'}}>Click me when you're done!</a>
+    </div>
+
+    {{input value=thought.body}}
+  </form>
+</div>
