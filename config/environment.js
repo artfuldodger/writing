@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'writing',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://some-thoughts.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
