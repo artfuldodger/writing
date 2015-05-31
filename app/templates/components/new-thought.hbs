@@ -6,6 +6,6 @@
       <a href="#" {{action 'finish'}}>Click me when you're done!</a>
     </div>
 
-    {{input value=thought.body key-press="typed"}}
+    {{view 'complaining-text-view' value=thought.body key-press="typed"}}
   </form>
 </div>
