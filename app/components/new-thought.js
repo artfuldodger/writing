@@ -14,6 +14,10 @@ export default Ember.Component.extend({
 
       tracker.recordTyping();
       tracker.playSound();
+
+      var size = tracker.size();
+      Ember.$('input').css('font-size', size + 'px');
+      Ember.$('input').css('height', size + (size/2) + 'px');
     }
   },
 

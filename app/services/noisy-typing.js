@@ -42,6 +42,17 @@ export default Ember.Service.extend({
     return pitch;
   },
 
+  size: function() {
+    var size = this.pitch();
+    if (size < 20) {
+      size = 20;
+    } else if (size > 100) {
+      size = 100;
+    }
+
+    return size;
+  },
+
   _timeSinceLastTyping: function () {
     if (!this.get('lastTypingTime')) {
       return 2000;
