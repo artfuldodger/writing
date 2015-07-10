@@ -6,7 +6,7 @@
       {{link-to 'new' 'thoughts.new' class='button'}}
     </h1>
 
-    {{#each thought in controller}}
+    {{#each controller as |thought|}}
       <div class="thought">
         {{thought.body}}
       </div>
